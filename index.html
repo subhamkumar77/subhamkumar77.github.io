@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crown Events Brahmapur | Wedding & Event Planner</title>
+
+<meta name="description"
+content="Crown Events Brahmapur — Wedding planning, decoration, entertainment and complete event solutions in Berhampur, Odisha.">
+
+<meta name="keywords"
+content="Crown Events Brahmapur, Crown Events Berhampur, wedding planner Berhampur, event planner Brahmapur, wedding decoration Berhampur">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --gold:#f4c85b;
+    --gold-light:#ffe39a;
+    --black:#070707;
+    --dark:#101010;
+    --grey:#bdbdbd;
+}
+
+body{
+    background:var(--black);
+    color:white;
+    font-family:Georgia,"Times New Roman",serif;
+    line-height:1.6;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.container{
+    width:92%;
+    max-width:1250px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(5,5,5,.96);
+    border-bottom:1px solid rgba(244,200,91,.3);
+    backdrop-filter:blur(10px);
+}
+
+.navbar{
+    min-height:78px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo-small{
+    width:135px;
+    height:auto;
+    display:block;
+}
+
+nav{
+    display:flex;
+    gap:28px;
+}
+
+nav a{
+    font-family:Arial,sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    color:#eee;
+    transition:.25s;
+}
+
+nav a:hover{
+    color:var(--gold);
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:calc(100vh - 78px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+
+    background:
+    radial-gradient(
+        circle at center,
+        rgba(244,200,91,.13),
+        transparent 38%
+    ),
+    linear-gradient(#0b0b0b,#050505);
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:550px;
+    height:550px;
+    border:1px solid rgba(244,200,91,.18);
+    border-radius:50%;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    padding:70px 0;
+    width:100%;
+}
+
+.hero-logo{
+    width:210px;
+    max-width:65%;
+    margin:0 auto 28px;
+    display:block;
+}
+
+.eyebrow{
+    font-family:Arial,sans-serif;
+    color:var(--gold);
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:5px;
+    text-transform:uppercase;
+}
+
+.hero h1{
+    font-size:clamp(48px,9vw,90px);
+    line-height:1;
+    margin:15px 0;
+    letter-spacing:2px;
+}
+
+.hero h1 span{
+    color:var(--gold);
+}
+
+.tagline{
+    font-size:clamp(23px,4vw,34px);
+    font-style:italic;
+    color:var(--gold-light);
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.hero-description{
+    max-width:720px;
+    margin:auto;
+    color:#ccc;
+    font-family:Arial,sans-serif;
+    font-size:15px;
+}
+
+.buttons{
+    margin-top:32px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.btn{
+    padding:13px 23px;
+    border:1px solid var(--gold);
+    color:var(--gold);
+    font-family:Arial,sans-serif;
+    font-weight:bold;
+    font-size:13px;
+    transition:.25s;
+}
+
+.btn:hover{
+    background:var(--gold);
+    color:#000;
+    transform:translateY(-2px);
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:#000;
+}
+
+/* ================= GENERAL SECTIONS ================= */
+
+section{
+    padding:90px 0;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-heading small{
+    color:var(--gold);
+    font-family:Arial,sans-serif;
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+.section-heading h2{
+    font-size:clamp(35px,6vw,55px);
+    margin:8px 0;
+}
+
+.section-heading p{
+    color:var(--grey);
+    font-family:Arial,sans-serif;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:#0d0d0d;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.about h3{
+    font-size:36px;
+    line-height:1.2;
+}
+
+.gold-line{
+    width:70px;
+    height:2px;
+    background:var(--gold);
+    margin:20px 0;
+}
+
+.about p{
+    color:#c5c5c5;
+    font-family:Arial,sans-serif;
+    margin-bottom:15px;
+}
+
+.about-box{
+    border:1px solid rgba(244,200,91,.25);
+    padding:40px 30px;
+    background:linear-gradient(145deg,#151515,#090909);
+}
+
+.about-box h3{
+    color:var(--gold);
+    font-size:28px;
+}
+
+/* ================= SERVICES ================= */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.service-card{
+    padding:30px 25px;
+    background:linear-gradient(145deg,#151515,#0b0b0b);
+    border:1px solid rgba(244,200,91,.18);
+    transition:.25s;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+    border-color:var(--gold);
+}
+
+.service-number{
+    color:var(--gold);
+    font-family:Arial,sans-serif;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.service-card h3{
+    margin:8px 0;
+    font-size:24px;
+}
+
+.service-card p{
+    color:#aaa;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+}
+
+/* ================= PACKAGES ================= */
+
+.packages{
+    background:#0d0d0d;
+}
+
+.package-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.package{
+    background:#111;
+    border:1px solid rgba(244,200,91,.2);
+    padding:28px 23px;
+}
+
+.package.featured{
+    border-color:var(--gold);
+}
+
+.package h3{
+    color:var(--gold);
+    font-size:23px;
+}
+
+.price{
+    font-size:24px;
+    font-weight:bold;
+    margin:8px 0 18px;
+}
+
+.package ul{
+    padding-left:20px;
+    color:#c8c8c8;
+    font-family:Arial,sans-serif;
+    font-size:13px;
+}
+
+.package li{
+    margin:6px 0;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#0d0d0d;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.contact-card{
+    background:#111;
+    border:1px solid rgba(244,200,91,.2);
+    padding:30px;
+}
+
+.contact-card h3{
+    color:var(--gold);
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.contact-link{
+    display:block;
+    padding:12px 0;
+    border-bottom:1px solid rgba(255,255,255,.07);
+    font-family:Arial,sans-serif;
+    color:#ddd;
+    transition:.2s;
+}
+
+.contact-link:hover{
+    color:var(--gold);
+}
+
+.address{
+    line-height:1.8;
+}
+
+.contact-buttons{
+    margin-top:22px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    text-align:center;
+    padding:30px 15px;
+    border-top:1px solid rgba(244,200,91,.25);
+    color:#999;
+    font-family:Arial,sans-serif;
+    font-size:13px;
+}
+
+footer strong{
+    color:var(--gold);
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-family:Arial,sans-serif;
+    font-weight:bold;
+    z-index:100;
+    box-shadow:0 5px 25px rgba(0,0,0,.5);
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px){
+
+    .navbar{
+        min-height:68px;
+    }
+
+    .logo-small{
+        width:110px;
+    }
+
+    nav{
+        gap:13px;
+    }
+
+    nav a{
+        font-size:11px;
+    }
+
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .services-grid,
+    .package-grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:70px 0;
+    }
+
+    .hero{
+        min-height:calc(100vh - 68px);
+    }
+
+    .hero-logo{
+        width:180px;
+    }
+}
+
+@media(max-width:500px){
+
+    nav a:nth-child(2),
+    nav a:nth-child(3){
+        display:none;
+    }
+
+    nav{
+        gap:12px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero-logo{
+        width:165px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#home">
+<img src="images/logo.png"
+     class="logo-small"
+     alt="Crown Events Brahmapur Logo">
+</a>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#packages">Packages</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-content">
+
+<img src="images/logo.png"
+     class="hero-logo"
+     alt="Crown Events">
+
+<div class="eyebrow">
+Wedding & Event Planner • Brahmapur
+</div>
+
+<h1>
+CROWN <span>EVENTS</span>
+</h1>
+
+<div class="tagline">
+We Create. You Celebrate.
+</div>
+
+<p class="hero-description">
+Wedding planning, elegant decoration, entertainment and complete
+event solutions for celebrations in Brahmapur, Odisha.
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-primary"
+   href="tel:+916370539067">
+CALL US
+</a>
+
+<a class="btn"
+   href="https://wa.me/916370539067"
+   target="_blank">
+WHATSAPP
+</a>
+
+<a class="btn"
+   href="https://www.instagram.com/_crownevents/"
+   target="_blank">
+INSTAGRAM
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<div class="container about-grid">
+
+<div>
+
+<div class="eyebrow">
+About Crown Events
+</div>
+
+<h3>
+Turning celebrations into lasting memories.
+</h3>
+
+<div class="gold-line"></div>
+
+<p>
+Crown Events is a Brahmapur-based wedding and event planning
+team focused on decoration, entertainment and complete
+celebration solutions.
+</p>
+
+<p>
+From intimate functions to large wedding celebrations, we
+plan every event around its look, atmosphere and requirements.
+</p>
+
+</div>
+
+
+<div class="about-box">
+
+<div class="eyebrow">
+Our Approach
+</div>
+
+<h3>
+Elegant. Detailed. Memorable.
+</h3>
+
+<div class="gold-line"></div>
+
+<p>
+Décor, lighting, sound, entertainment, special effects and
+event support — brought together for your celebration.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>What We Do</small>
+
+<h2>Our Services</h2>
+
+<p>
+Complete event solutions for celebrations in Brahmapur.
+</p>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<div class="service-card">
+<div class="service-number">01</div>
+<h3>Wedding Planning</h3>
+<p>
+Planning and coordination for wedding celebrations and functions.
+</p>
+</div>
+
+
+<div class="service-card">
+<div class="service-number">02</div>
+<h3>Theme Decoration</h3>
+<p>
+Stage, entrance, backdrop, floral and complete venue decoration.
+</p>
+</div>
+
+
+<div class="service-card">
+<div class="service-number">03</div>
+<h3>Lighting & Sound</h3>
+<p>
+Ambience lighting, DJ, sound setup and event electronics.
+</p>
+</div>
+
+
+<div class="service-card">
+<div class="service-number">04</div>
+<h3>Entertainment</h3>
+<p>
+Anchor, DJ, singers, live band, orchestra and other entertainment.
+</p>
+</div>
+
+
+<div class="service-card">
+<div class="service-number">05</div>
+<h3>Special Effects</h3>
+<p>
+Cold pyro, dry ice, paper confetti, sky shot and themed entries.
+</p>
+</div>
+
+
+<div class="service-card">
+<div class="service-number">06</div>
+<h3>Event Support</h3>
+<p>
+Security, welcome girls, Punjabi dhol, procession and event support.
+</p>
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PACKAGES ================= -->
+
+<section class="packages" id="packages">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>Decoration Packages</small>
+
+<h2>Our Packages</h2>
+
+<p>
+Selected packages from the current Crown Events brochure.
+</p>
+
+</div>
+
+
+<div class="package-grid">
+
+
+<div class="package">
+
+<h3>Day Event</h3>
+
+<div class="price">
+₹2,50,000
+</div>
+
+<ul>
+<li>Tent structural design</li>
+<li>Passing main gate to venue</li>
+<li>Entrance gate</li>
+<li>Stage / Bedi</li>
+<li>70 steel chairs</li>
+<li>8 round tables</li>
+<li>LED ambience lighting</li>
+<li>10 coolers</li>
+<li>Dining sound</li>
+<li>DG for 8 hours</li>
+<li>Artificial flower decoration</li>
+<li>Security guard</li>
+<li>Punjabi Dhol</li>
+<li>2 welcome girls</li>
+</ul>
+
+</div>
+
+
+<div class="package featured">
+
+<h3>Evening Event</h3>
+
+<div class="price">
+₹3,20,000
+</div>
+
+<ul>
+<li>6:00 PM to Midnight</li>
+<li>Tent structural design</li>
+<li>Passing main gate to venue</li>
+<li>Entrance gate</li>
+<li>Stage / Bedi</li>
+<li>70 steel chairs</li>
+<li>8 round tables</li>
+<li>Gate & stage lighting</li>
+<li>Ambience designer light</li>
+<li>Dining sound</li>
+<li>10 coolers</li>
+<li>DG for 8 hours</li>
+<li>Artificial flower decoration</li>
+<li>Bride & Groom Entry</li>
+<li>Cold Pyro</li>
+<li>Dry Ice</li>
+</ul>
+
+</div>
+
+
+<div class="package">
+
+<h3>Haldi Package</h3>
+
+<div class="price">
+₹60,000
+</div>
+
+<ul>
+<li>12×8 Stage with backdrop</li>
+<li>15×45 Structural setup</li>
+<li>Artificial Marigold theme</li>
+<li>2 Sound Boxes</li>
+<li>Mobile pin connection</li>
+<li>Flex stand</li>
+<li>Steel chairs</li>
+</ul>
+
+</div>
+
+
+<div class="package">
+
+<h3>Sangeet Package</h3>
+
+<div class="price">
+₹1,40,000
+</div>
+
+<ul>
+<li>Stage with backdrop</li>
+<li>Couple sitting Deewan</li>
+<li>Stage light</li>
+<li>Sound setup</li>
+<li>2 microphones</li>
+<li>Ambience light</li>
+<li>60 steel chairs</li>
+<li>6 round tables</li>
+<li>Local DJ & Anchor</li>
+<li>Flex stand</li>
+</ul>
+
+</div>
+
+
+<div class="package">
+
+<h3>Day & Night Event</h3>
+
+<div class="price">
+₹3,55,000
+</div>
+
+<ul>
+<li>Bedi & reception stage decoration</li>
+<li>Day & night event setup</li>
+<li>Complete decoration package</li>
+</ul>
+
+</div>
+
+
+<div class="package">
+
+<h3>Extra Effects</h3>
+
+<div class="price">
+On Requirement
+</div>
+
+<ul>
+<li>Cold Pyro</li>
+<li>Dry Ice</li>
+<li>Paper Confetti</li>
+<li>Day-out Sky Shot</li>
+<li>Barmala Theme Entry</li>
+</ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>Let's Celebrate</small>
+
+<h2>Contact Crown Events</h2>
+
+<p>
+Tell us about your event and let's plan it together.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<h3>
+Contact Information
+</h3>
+
+
+<a class="contact-link"
+   href="tel:+916370539067">
+📞 +91 6370539067
+</a>
+
+
+<a class="contact-link"
+   href="tel:+919078319405">
+📞 +91 9078319405
+</a>
+
+
+<a class="contact-link"
+   href="mailto:crownevents2026@gmail.com">
+✉ crownevents2026@gmail.com
+</a>
+
+
+<div class="contact-buttons">
+
+<a class="btn btn-primary"
+   href="https://wa.me/916370539067"
+   target="_blank">
+WHATSAPP
+</a>
+
+
+<a class="btn btn-primary"
+   href="https://www.instagram.com/_crownevents/"
+   target="_blank">
+INSTAGRAM
+</a>
+
+</div>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>
+Visit Our Office
+</h3>
+
+
+<a class="contact-link address"
+   href="https://www.google.com/maps/dir/?api=1&destination=Meenashi+Nagar,+4th+Ln,+in+front+of+Mahamayi+College,+Brahmapur,+Odisha+760001"
+   target="_blank">
+
+📍 Meenashi Nagar, 4th Ln,<br>
+in front of Mahamayi College,<br>
+Brahmapur, Andhapasara Road,<br>
+Odisha 760001
+
+</a>
+
+
+<br>
+
+
+<a class="btn btn-primary"
+   href="https://www.google.com/maps/dir/?api=1&destination=Meenashi+Nagar,+4th+Ln,+in+front+of+Mahamayi+College,+Brahmapur,+Odisha+760001"
+   target="_blank">
+
+GET DIRECTIONS
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<strong>CROWN EVENTS</strong>
+
+<br>
+
+We Create. You Celebrate.
+
+<br>
+
+Brahmapur, Odisha
+
+</footer>
+
+
+<!-- ================= WHATSAPP FLOATING BUTTON ================= -->
+
+<a class="whatsapp"
+   href="https://wa.me/916370539067"
+   target="_blank"
+   aria-label="WhatsApp">
+
+WA
+
+</a>
+
+
+</body>
+</html>
